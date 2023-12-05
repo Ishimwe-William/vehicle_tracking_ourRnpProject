@@ -19,7 +19,7 @@ cv2.namedWindow('RNP')
 cv2.setMouseCallback('RNP', RGB)
 
 # Open video capture
-cap = cv2.VideoCapture('vehicle_count.mp4')
+cap = cv2.VideoCapture('new_car_video.mp4')
 
 # Read class names from a file
 with open("coco.txt", "r") as my_file:
