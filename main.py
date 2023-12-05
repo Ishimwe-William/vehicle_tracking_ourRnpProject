@@ -32,7 +32,8 @@ counter_down = []
 vh_up = {}
 counter_up = []
 
-cy1 = 180
+# line y coordinates
+cy1 = 170
 cy2 = 190
 offset = 6
 
@@ -61,7 +62,8 @@ while True:
         y2 = int(row[3])
         d = int(row[5])
         c = class_list[d]
-        if 'car' in c:
+        # list of vehicles needed to be detected
+        if 'car' or 'truck' or 'motorcycle' in c:
             list.append([x1, y1, x2, y2])
     bbox_id = tracker.update(list)
     for bbox in bbox_id:
