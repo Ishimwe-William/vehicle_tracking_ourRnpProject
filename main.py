@@ -38,6 +38,7 @@ counter_up = []
 # Line y coordinates
 cy1 = 170
 cy2 = 190
+
 offset = 6
 
 # Initialize count variable
